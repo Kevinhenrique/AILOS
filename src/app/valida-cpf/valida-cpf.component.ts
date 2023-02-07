@@ -26,8 +26,6 @@ export class ValidaCpfComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       cpf: [null, [Validators.required, Validators.maxLength(11), this.validaCpf()]]
     })
-
-    console.log(this.formulario)
   }
 
   consultar() {
@@ -56,6 +54,8 @@ export class ValidaCpfComponent implements OnInit {
 
         if (cpf.length < 11) {
           this.desabilitaConsulta = true;
+          if (this.dados) this.dados = null
+
           return { cpfInvalido: true };
         } else this.desabilitaConsulta = !this.desabilitaConsulta
 

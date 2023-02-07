@@ -2,18 +2,21 @@
 
 ### Modo de execução
 
-Baixar as dependencias da aplicação com npm install
-Executar npx json-server --watch db.json para rodar o banco de dados json
-Executar npm start para rodar a aplicação
-CPF valido - 4245680033
+- Baixar as dependencias da aplicação com **npm install**
+- Executar **npx json-server --watch db.json** para rodar o banco de dados json em um cmd
+- Executar **npm start** para rodar a aplicação
+
 
 ### Aplicação
 
-Após a instalação e subir aplicação, será aberto uma tela pedindo para informar um cpf valido para pesquisa de um futuro cooperador(a)
+- CPF valido: **4245680033**
 
-Contendo uma caixa de texto com e um botão de consulta
+- Após a instalação e subir aplicação, será aberto uma tela pedindo para informar um cpf valido para pesquisa de um futuro cooperador(a)
 
-O campo do cpf é verificado automaticamente se é um cpf valido ou não, assim retornando na tela caso não for um cpf valido
+- Contendo uma caixa de texto com e um botão de consulta
 
-Após clicar no botão de consulta retornara um card informando o nome da pessoa com o cpf valido que foi pesquisado: cpf - 4245680033 - Mariane de Sousa Oliveira e se o cpf está regular.
+- O campo do cpf é verificado automaticamente se é um cpf valido ou não, assim retornando na tela caso não for um cpf valido
 
+- Após clicar no botão de consulta retornara um card informando o nome da pessoa **Mariane de Sousa Oliveira** e se o cpf está **Regular**.
+
+- Mas caso for um cpf valido e não estiver na base de dados retonara um mensagem informando.

@@ -7,28 +7,19 @@
   <mat-step>
     <form>
       <ng-template matStepLabel>Documentos</ng-template>
-
-      <div>
-        Em Construção
-      </div>
+      <div>Em Construção </div>
     </form>
   </mat-step>
   <mat-step>
     <form>
       <ng-template matStepLabel>Dados cadastrais</ng-template>
-
-      <div>
-        Em Construção
-      </div>
+      <div>Em Construção</div>
     </form>
   </mat-step>
   <mat-step>
     <form>
       <ng-template matStepLabel>Admissão</ng-template>
-
-      <div>
-        Em Construção
-      </div>
+      <div>Em Construção</div>
     </form>
   </mat-step>
 </mat-stepper>
@@ -70,7 +61,7 @@
   <div *ngIf="!ativaCarregamento && dados">
     <app-informacao-pessoal [dadoPessoal]="dados"></app-informacao-pessoal>
   </div>
-  <div *ngIf="!ativaCarregamento && dados === null">
+  <div *ngIf="!ativaCarregamento && dados === null && formulario.get('cpf')?.value.lenght > 10">
     <div class="card col-xs-3 col-sm-3 col-md-3">
       <div class="card-body">
         <blockquote class="blockquote mb-0">
