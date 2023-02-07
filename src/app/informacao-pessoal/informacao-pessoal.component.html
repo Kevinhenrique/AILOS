@@ -1,0 +1,41 @@
+<div class="col-xs-3 col-sm-3 col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="mb-3">
+                <h5 class="card-title">Situação cadastral do CPF</h5>
+                <small class="text-muted">Consulta na Receita Federal</small>
+            </div>
+            <div class="frameNome mb-3 d-flex">
+                <span class="material-icons md-48" style="color:gray; margin-top: 10px; margin-right: 10px;">person</span>
+                <div> <small class="text-muted">Nome</small> <br> {{dadoPessoal?.nome}}</div>
+            </div>
+            <div class="frameCpfRegular d-flex">
+                <span class="material-icons md-48" style="color: green; margin-top: 10px; margin-right: 10px">check_circle</span>
+                <div><small class="text-muted">Situação do CPF</small> <br> {{dadoPessoal?.situacaoCpf ? 'Regular' :
+                    'Irregular'}} </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Conta Aplicação</h5>
+                <small class="text-muted">Cooperativa Viacretti</small>
+                <div>Número da Conta</div>
+                <p> {{dadoPessoal?.contaAplicacao}} </p>
+                <a href="">Duplicar Conta</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Conta Corrente</h5>
+                <small class="text-muted">Cooperativa Viacretti</small>
+                <div>Número da Conta</div>
+                <p>{{dadoPessoal?.contaCorrente}}</p>
+                <a href="">Duplicar Conta</a>
+            </div>
+        </div>
+    </div> -->

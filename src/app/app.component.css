@@ -1,0 +1,221 @@
+/* Deixando alguns em tamanhos e espaços em % para pegar sempre a dimensão da tela */
+
+/* Em pixels alguns tamanhos e espaços podem quebrar as dimensões da tela utilizada */
+
+/* Para isso teria que utilizar o only screen */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400'); 
+@import url('https://fonts.googleapis.com/css?family=Exo:400'); 
+
+.menu {
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    /* width: 100px;
+    height: 100%;
+    left: 0px; */
+    background: #165C7D;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.header {
+    position: absolute;
+    width: 93%;
+    left: 7%;
+    /* min-width: 1180px; */
+    height: 89px;
+    /* left: 100px; */
+    background: #FFFFFF;
+}
+
+.content {
+    position: absolute;
+    background: #E7EEF1;
+    /* margin-top: 6.6%; */
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    height: 78px;
+    left: 7%;
+    bottom: 0%;
+    width: 93%;
+    background: #FFFFFF;
+}
+
+.admissao {
+    position: absolute;
+    width: 501px;
+    height: 32px;
+    margin-left: 24px;
+    top: calc(50% - 32px/2 - 9.5px);
+
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    /* | Neutral/Neutral 10 */
+    color: #101213;
+}
+
+p {
+    position: absolute;
+    width: 489px;
+    height: 18px;
+    margin-left: 24px;
+    top: calc(50% - 18px/2 + 15.5px);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* Cor texto sutil */
+
+    color: #787878;
+}
+
+.cantoLateral {
+    position: absolute;
+    width: 266px;
+    height: 44px;
+    margin-top: 23px;
+    right: 0%;
+}
+
+.dicas {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 25px;
+
+    position: absolute;
+    width: 274px;
+    height: 48px;
+    left: 22px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* top: 737px; */
+
+    /* Azul Ailos */
+    color: #165C7D;
+    border: 1px solid #165C7D;
+    border-radius: 2px;
+}
+
+.dicas:hover{
+    color: #FFFFFF;
+    background: #165C7D;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.hamburguer {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 30px;
+    top: 115px;
+}
+
+.lupa {
+    position: absolute;
+    left: 30px;
+    /* right: 46.31%; */
+    top: 173px;
+    bottom: 75%;
+
+    /* Branco */
+}
+
+.estrela {
+    position: absolute;
+    width: 30.35px;
+    height: 30px;
+    left: 30px;
+    top: 229px;
+    color: #FFFFFF;
+}
+
+.chat {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 288px;
+}
+
+.categoria {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 349px;
+}
+
+.universidade {
+    position: absolute;
+    width: 30.13px;
+    height: 30px;
+    left: 30px;
+    top: 412px;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: 19px;
+}
+
+.sino {
+    position: absolute;
+    width: 29px;
+    height: 28.63px;
+    right: 195px;
+    top: calc(50% - 28.63px/2 - 0.5px);
+}
+
+.viacredi {
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    width: 109px;
+    height: 32px;
+    right: 76px;
+    top: calc(50% - 32px/2 - 0.5px);
+    color: #125D79;
+    background: #FFFFFF;
+    border: 1px solid #125D79;
+    border-radius: 15px;
+}
+
+.homem {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 40.71px;
+    height: 42px;
+    right: 20.36px;
+    top: calc(50% - 42px/2 - 0.5px);
+    border-radius: 22px;
+    border: 1px solid #125D79;
+}

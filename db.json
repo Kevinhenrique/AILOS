@@ -1,0 +1,13 @@
+{
+    "dados": [
+        {
+            "id": "42456809033",
+            "nome": "Mariane de Sousa Oliveira",
+            "situacaoCpf": true,
+            "contaAplicacao": "557932-1",
+            "duplicarContaAplicacao": false,
+            "contaCorrente": "778461-8",
+            "duplicarContaCorrente": false
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+<mat-stepper #stepper class="mb-4">
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Início</ng-template>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Documentos</ng-template>
+
+      <div>
+        Em Construção
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Dados cadastrais</ng-template>
+
+      <div>
+        Em Construção
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Admissão</ng-template>
+
+      <div>
+        Em Construção
+      </div>
+    </form>
+  </mat-step>
+</mat-stepper>
+
+<form class="form-inline mb-4" [formGroup]="formulario" style="margin-left: 22px;">
+
+  <div>
+    <div class="informeCpf">Informe o CPF do futuro cooperado (a)</div>
+    <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente. <br>
+      Digite apenas os números (sem pontos ou traços). </p>
+  </div>
+
+  <div class="form-group mb-4">
+    <label for="cpf" class="campoCpf mb-2">CPF</label>
+    <div class="d-flex">
+      <div class="col-sm-3 col-md-3 col-xs-3">
+        <input type="text" maxlength="11" [ngClass]="{erroCpf : formulario.get('cpf')?.errors?.['cpfInvalido']}"
+          (change)="validaCpf" formControlName="cpf" class="form-control mb-2" id="cpf" placeholder="000.000.000-00">
+        <span *ngIf="formulario.get('cpf')?.errors?.['cpfInvalido']" class="text-danger">
+          Informe um CPF válido
+        </span>
+      </div>
+
+      <div class="col-sm-3 col-md-3 col-xs-3">
+        <div *ngIf="!ativaCarregamento || dados">
+          <button (click)="consultar()" [disabled]="desabilitaConsulta" class="btn btn-primary botaoPesquisa">Consulta
+            por CPF</button>
+        </div>
+        <div *ngIf="ativaCarregamento && !dados">
+          <button class="btn btn-primary botaoPesquisa" type="button">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div *ngIf="!ativaCarregamento && dados">
+    <app-informacao-pessoal [dadoPessoal]="dados"></app-informacao-pessoal>
+  </div>
+  <div *ngIf="!ativaCarregamento && dados === null">
+    <div class="card col-xs-3 col-sm-3 col-md-3">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>Não foi encontrado nenhuma informação sobre o CPF informado no momento, tente mais tarde!</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+</form>
