@@ -1,36 +1,40 @@
-<div class="d-flex">
-  <div class="menu">
-    <ul>
-      <li><img src="../assets/logo.png" alt="logo" class="logo"></li>
-      <li class="hamburguer"><span class="material-icons md-48" style="color: #739DB1;">menu</span> </li>
-      <li class="lupa"><span class="material-icons" style="color: #ffffff;">search</span></li>
-      <li class="estrela"><span class="material-icons" style="color: #ffffff;">star_rate</span></li>
-      <li class="chat"><span class="material-icons" style="color: #ffffff;">sms</span></li>
-      <li class="categoria"><span class="material-icons" style="color: #ffffff;">tune</span></li>
-      <li class="universidade"><span class="material-icons" style="color: #ffffff;">account_balance</span></li>
-    </ul>
-  </div>
-  <div class="header">
-    <div class="d-flex">
-      <div class="col-sm-6 col-xs-6 col-md-6" role="banner" style="height: 89px;
-        border-radius: 0px;
-        ">
-        <span class="admissao">NOVA ADMISSÃO COOPERADO</span>
-        <p>Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado </p>
-
-      </div>
-      <div class="cantoLateral">
-        <span class="material-icons sino" style="color: #125D79;">notifications</span>
-        <div class="viacredi">VIACREDI</div>
-        <img src="../assets/homem.png" alt="homem" class="homem">
-      </div>
-
+<div class="planoDeFundo">
+  <div class="d-flex">
+    <div class="menu">
+      <ul>
+        <li><img src="../assets/logo.png" alt="logo" class="logo"></li>
+        <li class="hamburguer"><span class="material-icons md-48" style="color: #739DB1;">menu</span> </li>
+        <li class="lupa"><span class="material-icons" style="color: #ffffff;">search</span></li>
+        <li class="estrela"><span class="material-icons" style="color: #ffffff;">star_rate</span></li>
+        <li class="chat"><span class="material-icons" style="color: #ffffff;">sms</span></li>
+        <li class="categoria"><span class="material-icons" style="color: #ffffff;">tune</span></li>
+        <li class="universidade"><span class="material-icons" style="color: #ffffff;">account_balance</span></li>
+      </ul>
     </div>
-    <div class="content" role="main">
-      <app-valida-cpf></app-valida-cpf>
+    <div class="colunaPrincipal"> 
+      <div class="header">
+        <div class="d-flex">
+          <div class="col col-sm-6 col-md-6 col-xs-6">
+            <span class="admissao">NOVA ADMISSÃO COOPERADO</span>
+            <p>Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado </p>
+    
+          </div>
+          <div class="cantoLateral col">
+            <div class="d-flex">
+              <span class="material-icons sino" style="color: #125D79; margin: 0 8px;">notifications</span>
+              <div class="viacredi">VIACREDI</div>
+              <img src="../assets/homem.png" alt="homem" class="homem">
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <div style="flex: 1;">
+        <app-valida-cpf></app-valida-cpf> 
+      </div>
+      <footer>
+        <button class="btn dicas">Dicas para abertura da conta</button>
+      </footer>
     </div>
   </div>
-  <footer>
-    <button class="btn dicas">Dicas para abertura da conta</button>
-  </footer>
 </div>
