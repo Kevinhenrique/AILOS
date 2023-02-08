@@ -2,10 +2,10 @@
 
 ### Modo de execução
 
+- git clone https://github.com/Kevinhenrique/AILOS
 - Baixar as dependencias da aplicação com **npm install**
 - Executar **npx json-server --watch db.json** para rodar o banco de dados json em um cmd
-- Executar **npm start** para rodar a aplicação
-
+- Executar **npm start** para rodar a aplicação em outro terminal
 
 ### Aplicação
 
